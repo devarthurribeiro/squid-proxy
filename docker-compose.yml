@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  squid:
+    hostname: squid
+    container_name: squid
+    image: datadog/squid
+    ports:
+      - "3128:3128"
+    volumes:
+      - /home/$USER/squid/cache:/var/spool/squid datadog/squid
