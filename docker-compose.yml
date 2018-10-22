@@ -9,3 +9,4 @@ services:
       - "3128:3128"
     volumes:
       - /home/$USER/squid/cache:/var/spool/squid datadog/squid
+      - ./squid.conf:/etc/squid/squid.conf
